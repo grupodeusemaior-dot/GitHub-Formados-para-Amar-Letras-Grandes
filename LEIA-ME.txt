@@ -1,0 +1,25 @@
+FORMADOS PARA AMAR — LETRAS GRANDES
+
+TESTAR NO VS CODE
+1. Extraia a pasta Formados-para-Amar-Letras-Grandes.
+2. No VS Code, abra a pasta inteira (Arquivo > Abrir Pasta).
+3. Instale a extensão Live Server, caso ainda não tenha.
+4. Clique com o botão direito em index.html e escolha Open with Live Server.
+5. Teste os três menus, anterior/próximo, voltar ao texto do dia e A−/A+.
+
+IMPORTANTE
+- Não abra index.html por duplo clique (file://). Use o Live Server.
+- Os três arquivos JSON originais estão na pasta dados.
+- A sequência diária começa no registro 1 em 02/11/2026 e avança automaticamente a cada dia.
+- Para testar a instalação PWA em celular, publique depois em HTTPS (GitHub Pages, por exemplo). No iPhone, abra no Safari e use Compartilhar > Adicionar à Tela de Início.
+- Este pacote é independente e não altera o app Renova-me original.
+
+ATUALIZAÇÃO VISUAL
+- A logo enviada foi inserida no cabeçalho e na apresentação inicial.
+- Os parágrafos de leitura e textos de apresentação agora ficam justificados.
+
+CORREÇÃO DE JUSTIFICAÇÃO
+- Foi reforçada a regra CSS com seletor de ID e !important para garantir o alinhamento justificado dos parágrafos da leitura.
+
+CORREÇÃO DE QUEBRAS DE LINHA E JUSTIFICAÇÃO
+- Quebras simples dentro dos textos agora são convertidas em espaços; parágrafos separados por linhas em branco continuam separados. Os JSON originais permanecem intactos.

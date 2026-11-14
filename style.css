@@ -1,0 +1,37 @@
+*{box-sizing:border-box} :root{--navy:#172d43;--gold:#c6a56a;--cream:#f7f3eb;--ink:#202b35;--reading-size:22px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.6}
+.top{display:flex;align-items:center;justify-content:space-between;padding:14px clamp(16px,4vw,48px);background:var(--navy);color:#fff}
+.brand{display:flex;align-items:center;gap:12px;font-family:Arial,sans-serif}.brand-logo{width:48px;height:48px;object-fit:cover;border-radius:10px;border:1px solid var(--gold)}.brand strong,.brand small{display:block}.brand strong{font-size:12px;letter-spacing:1.3px}.brand small{font-size:11px;opacity:.8}
+button{font:inherit;cursor:pointer}.install,.font-tools button,.navigation button,.today,.back{border:0;border-radius:12px;padding:10px 16px;font-family:Arial,sans-serif;font-weight:700}.install,.primary{background:var(--gold);color:#172d43}
+main{width:min(1050px,92%);margin:28px auto 60px}.intro{text-align:center;padding:clamp(26px,6vw,60px) 18px;background:linear-gradient(135deg,#172d43,#29445c);border-radius:24px;color:white;box-shadow:0 12px 30px #172d4320}.eyebrow{font:700 12px Arial,sans-serif;letter-spacing:2px;color:var(--gold)}h1{font-size:clamp(32px,6vw,54px);line-height:1.1;margin:12px 0}.subtitle{font-size:clamp(22px,4vw,30px);margin:0;color:#f4e5c6}.large-label{display:inline-block;margin-top:16px;padding:6px 15px;border:1px solid var(--gold);border-radius:30px;color:#f4e5c6;font:700 12px Arial,sans-serif;letter-spacing:2px}.intro-copy{max-width:620px;margin:18px auto 0;font-size:18px;color:#f3eee5}
+.books{margin-top:36px}.books h2{font-size:27px;color:var(--navy)}.book-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.book-card{position:relative;display:flex;flex-direction:column;align-items:flex-start;min-height:220px;padding:24px;text-align:left;border:1px solid #e3d8c5;border-radius:18px;background:#fff;box-shadow:0 7px 20px #182d4310;color:var(--ink);transition:transform .15s}.book-card:hover{transform:translateY(-3px)}.number{color:var(--gold);font:bold 13px Arial,sans-serif;letter-spacing:2px}.book-card strong{font-size:23px;line-height:1.25;margin:18px 0 10px;color:var(--navy)}.book-card small{font-size:16px;line-height:1.45}.open{margin-top:auto;padding-top:20px;color:#8c6a32;font:bold 14px Arial,sans-serif}
+.reader{margin-top:28px;padding:clamp(18px,4vw,38px);background:#fff;border-radius:22px;box-shadow:0 8px 26px #182d4310}.reader-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.back{background:#edf0f2;color:var(--navy)}.font-tools{display:flex;gap:8px}.font-tools button{background:var(--navy);color:#fff;font-size:18px;min-width:52px}.reader h2{font-size:clamp(28px,5vw,40px);line-height:1.2;color:var(--navy);margin:6px 0}.date{font:700 13px Arial,sans-serif;color:#8c6a32;letter-spacing:.5px}.entry{font-size:var(--reading-size);line-height:1.8;overflow-wrap:anywhere}.entry h3{font-size:1.15em;color:var(--navy);margin:1.2em 0 .35em}.entry p{margin:.65em 0;white-space:pre-line}.entry .verse{font-style:italic;color:#5a4a31;border-left:4px solid var(--gold);padding-left:16px}.entry .section{font-family:Arial,sans-serif;font-weight:700;font-size:.78em;letter-spacing:.7px;color:#8c6a32;text-transform:uppercase;margin-top:1.4em}.navigation{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:28px;padding-top:18px;border-top:1px solid #e8e0d4}.navigation button{background:#edf0f2;color:var(--navy)}.navigation button:disabled{opacity:.4;cursor:not-allowed}.navigation .primary{background:var(--gold)}#counter{font:700 13px Arial,sans-serif;color:#66727b}.today{display:block;margin:16px auto 0;background:transparent;color:#80602e;border:1px solid #d8c49e}
+footer{text-align:center;padding:22px;color:#66727b;font:12px Arial,sans-serif}
+@media(max-width:760px){.book-grid{grid-template-columns:1fr}.book-card{min-height:170px}.top{padding:12px}.install{font-size:12px;padding:9px}.navigation{flex-wrap:wrap}.navigation span{order:3;width:100%;text-align:center}.reader{padding:18px}.entry{line-height:1.7}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+/* Ajustes solicitados: logo oficial do projeto e leitura justificada */
+.app-logo{display:block;width:min(340px,78%);height:auto;aspect-ratio:1/1;object-fit:contain;margin:0 auto 22px;border-radius:18px;box-shadow:0 8px 24px #0002}
+.entry,.entry p,.intro-copy,.book-card small{ text-align:justify; text-justify:inter-word; }
+.entry h3,.entry .section{ text-align:left; }
+@media(max-width:520px){.app-logo{width:min(280px,82%);margin-bottom:18px}.brand-logo{width:40px;height:40px}}
+
+
+/* Correção definitiva da justificação do conteúdo de leitura */
+#entry,
+#entry p,
+#entry .verse,
+#entry .section,
+#entry h3 {
+  text-align: justify !important;
+  text-align-last: auto !important;
+}
+#entry p {
+  display: block !important;
+  width: 100% !important;
+  white-space: pre-line;
+  text-justify: inter-word;
+}
+
+/* Quebras simples são normalizadas em app.js; a justificação pode
+   distribuir as linhas sem interrupções artificiais. */
+#entry p { white-space: normal !important; }

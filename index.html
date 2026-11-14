@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172d43">
+  <meta name="description" content="Do Namoro ao Casamento — Formados para Amar. Leituras diárias em letras grandes.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Do Namoro ao Casamento — Letras Grandes</title>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><img class="brand-logo" src="logo-formados-para-amar.png" alt="Do Namoro ao Casamento — Formados para Amar, Letras Grandes"><div><strong>RENOVA-ME DEUS MEU</strong><small>Palavra, fé e vida</small></div></div>
+  <button id="installBtn" class="install" hidden>Instalar aplicativo</button>
+</header>
+<main>
+  <section class="intro">
+    <img class="app-logo" src="logo-formados-para-amar.png" alt="Logo Do Namoro ao Casamento — Formados para Amar — Letras Grandes"><p class="eyebrow">RENOVA-ME DEUS MEU APRESENTA</p>
+    <h1>Do Namoro ao Casamento</h1>
+    <p class="subtitle">Formados para Amar</p>
+    <span class="large-label">LETRAS GRANDES</span>
+    <p class="intro-copy">Uma leitura por dia para cultivar amor, pureza, respeito e compromisso diante de Deus.</p>
+  </section>
+  <section id="home" class="books">
+    <h2>Escolha uma coleção</h2>
+    <div class="book-grid">
+      <button class="book-card" data-book="honra"><span class="number">01</span><strong>Para Conquistá-la com Honra</strong><small>Aprendendo a amar com pureza, respeito e honra.</small><span class="open">Abrir coleção →</span></button>
+      <button class="book-card" data-book="altar"><span class="number">02</span><strong>Antes do Altar</strong><small>Preparando o coração para a aliança do casamento.</small><span class="open">Abrir coleção →</span></button>
+      <button class="book-card" data-book="casamento"><span class="number">03</span><strong>Edifique o Seu Casamento</strong><small>Construindo o lar sobre o amor e a Palavra de Deus.</small><span class="open">Abrir coleção →</span></button>
+    </div>
+  </section>
+  <section id="reader" class="reader" hidden>
+    <div class="reader-head">
+      <button id="backBtn" class="back">← Coleções</button>
+      <div class="font-tools" aria-label="Ajustar tamanho da letra">
+        <button id="smaller" aria-label="Diminuir letras">A−</button>
+        <button id="larger" aria-label="Aumentar letras">A+</button>
+      </div>
+    </div>
+    <p id="collectionLabel" class="eyebrow"></p>
+    <h2 id="collectionTitle"></h2>
+    <p id="dailyDate" class="date"></p>
+    <article id="entry" class="entry"></article>
+    <nav class="navigation">
+      <button id="previousBtn">← Anterior</button>
+      <span id="counter"></span>
+      <button id="nextBtn" class="primary">Próximo →</button>
+    </nav>
+    <button id="todayBtn" class="today">Voltar ao texto do dia</button>
+  </section>
+</main>
+<footer>Renova-me Deus Meu · Formados para Amar</footer>
+<script src="app.js"></script>
+</body>
+</html>
