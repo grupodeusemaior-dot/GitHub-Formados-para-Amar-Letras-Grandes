@@ -1,0 +1,24 @@
+CORREÇÃO DO ÍCONE DE INSTALAÇÃO — FORMADOS PARA AMAR
+
+Arquivos para substituir na raiz do repositório:
+- index.html
+- manifest.json
+- service-worker.js
+- icon-192.png
+- icon-512.png
+
+Arquivo novo para adicionar:
+- apple-touch-icon.png
+- icon-maskable-512.png
+
+Os novos ícones foram gerados a partir da imagem logo-formados-para-amar.png, que já estava no projeto.
+O service worker foi atualizado para v2 para invalidar o cache antigo.
+
+Depois de publicar:
+1. Aguarde o GitHub Pages atualizar.
+2. Abra o site no celular e atualize a página.
+3. Se o aplicativo já estava instalado, remova-o da tela inicial e instale novamente.
+4. Android: abra no Chrome e use Instalar aplicativo / Adicionar à tela inicial.
+5. iPhone: abra no Safari, toque em Compartilhar e depois Adicionar à Tela de Início.
+
+Observação: os ícones novos só aparecem em instalações feitas novamente. Atualizar o site não troca necessariamente o ícone de um atalho já instalado.
