@@ -35,3 +35,12 @@ footer{text-align:center;padding:22px;color:#66727b;font:12px Arial,sans-serif}
 /* Quebras simples são normalizadas em app.js; a justificação pode
    distribuir as linhas sem interrupções artificiais. */
 #entry p { white-space: normal !important; }
+
+/* Créditos e acesso ao site oficial */
+.footer-actions{display:flex;justify-content:center;align-items:flex-start;gap:12px;flex-wrap:wrap;margin:12px auto 0}
+.credits{max-width:440px;text-align:left;font:14px/1.5 Arial,sans-serif;color:var(--navy)}
+.credits summary{display:inline-block;list-style:none;cursor:pointer;border:0;border-radius:12px;padding:11px 18px;background:var(--navy);color:#fff;font-weight:700;text-align:center}
+.credits summary::-webkit-details-marker{display:none}
+.credits p{margin:10px 0 0;padding:14px;border:1px solid #e3d8c5;border-radius:12px;background:#fff;color:var(--ink)}
+.site-button{display:inline-block;border-radius:12px;padding:11px 18px;background:var(--gold);color:var(--navy);font:bold 14px Arial,sans-serif;text-decoration:none}
+.site-button:hover,.credits summary:hover{filter:brightness(.96)}
